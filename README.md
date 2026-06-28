@@ -6,7 +6,7 @@ tooling and workflow as a production SOC.
 
 ---
 
-## Featured lab
+## Featured labs
 
 ### [Lab 01 — Phishing → Credential Compromise](./lab-01-phishing-credential-compromise/) · ✅ Complete
 
@@ -21,13 +21,27 @@ and deliver a formal incident report with IOCs and response recommendations.
   [incident report](./lab-01-phishing-credential-compromise/incident-report.md) ·
   [SPL query library](./lab-01-phishing-credential-compromise/splunk-queries.md)
 
+### [Lab 02 — Kerberoasting Detection](./lab-02-kerberoasting/) · ✅ Complete
+
+A **SEV3** alert (anomalous Kerberos service-ticket request volume) worked cold: confirm the true
+positive, trace the compromised host and the 28 service accounts it targeted, and show why raw
+request volume is a misleading signal — the busiest account in the whole dataset was the domain
+controller itself. Delivered as a formal incident report mapped to MITRE ATT&CK.
+
+- **Technique:** Kerberoasting (`T1558.003`), Credential Access
+- **Key telemetry:** Windows Security `4769`, ticket-encryption (RC4 `0x17`) and request-status analysis
+- **Deliverables:**
+  [investigation notes](./lab-02-kerberoasting/investigation-notes.md) ·
+  [incident report](./lab-02-kerberoasting/incident-report.md) ·
+  [SPL query library](./lab-02-kerberoasting/splunk-queries.md)
+
 ---
 
 ## Skills demonstrated
 
 - Alert triage and scoping from a single starting alert
 - Splunk / SPL investigation and timeline reconstruction
-- Windows authentication & logon-type analysis (Type 3 / NTLM)
+- Windows authentication, logon-type, and Kerberos (`4769`) analysis
 - MITRE ATT&CK technique mapping
 - Incident reporting for both technical and non-technical audiences
 
@@ -37,10 +51,12 @@ and deliver a formal incident report with IOCs and response recommendations.
 
 Lab 01 was investigated on a small, isolated cloud lab — a Windows Server 2022 domain controller
 (`soclab.local`) as the monitored endpoint, a separate attacker host, and a dedicated Splunk SIEM
-aggregating Sysmon and Windows Event telemetry. Live infrastructure details and credentials are
-intentionally not published.
+aggregating Sysmon and Windows Event telemetry. Lab 02 uses real public attack telemetry (the
+[splunk/attack_data](https://github.com/splunk/attack_data) project) ingested into a self-hosted
+Splunk instance, so the work centres on the analysis rather than on standing up infrastructure.
+Live infrastructure details and credentials are intentionally not published.
 
 ---
 
-*More SOC projects — identity-attack detection, phishing triage automation, and endpoint
-detection-as-code — are in progress and will land in their own repositories.*
+*More SOC projects — further identity-attack detection, phishing triage automation, and endpoint
+detection-as-code — are in progress.*
