@@ -1,5 +1,10 @@
 # Internal working files, not for publication
 **/social-posts.md
-**/LEARN-*.md
 **/HANDOFF.md
 lab-02-kerberoasting/detection.md
+
+# Study notes: keep the L2 detection-tuning tutorial private, but publish the
+# curated reading lists (they add depth and are referenced by the lab READMEs).
+**/LEARN-*.md
+!lab-03-dcsync/LEARN-resources.md
+!lab-04-pass-the-hash/LEARN-resources.md
