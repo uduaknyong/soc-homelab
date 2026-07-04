@@ -55,7 +55,6 @@ it originate, and did it succeed? What separates the suspicious authentication f
 | [investigation-notes.md](./investigation-notes.md) | Working notes: SPL queries, findings, timeline, IOCs, verdict (filled in live during triage) |
 | [incident-report.md](./incident-report.md) | Formal incident report (written after triage) |
 | [splunk-queries.md](./splunk-queries.md) | Reusable SPL query library from this lab |
-| [LEARN-resources.md](./LEARN-resources.md) | Curated reading to go deeper on Pass-the-Hash & NTLM authentication |
 | [evidence/](./evidence/) | Screenshots captured during the investigation |
 
 ## Outcome
