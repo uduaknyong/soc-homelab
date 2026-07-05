@@ -8,7 +8,7 @@ tooling and workflow as a production SOC.
 
 ## Featured labs
 
-### [Lab 01 — Phishing → Credential Compromise](./lab-01-phishing-credential-compromise/) · ✅ Complete
+### [Lab 01 — Password Spray → Credential Compromise](./lab-01-password-spraying/) · ✅ Complete
 
 A **SEV3** alert (repeated failed logons followed by a success from the same source) is triaged
 from scratch: scope the activity in Splunk, identify the compromised account, build a timeline,
@@ -17,9 +17,9 @@ and deliver a formal incident report with IOCs and response recommendations.
 - **Techniques:** Password Spraying (`T1110.003`), Valid Accounts (`T1078`), Type 3 network logon
 - **Key telemetry:** Windows Security `4625` / `4624`, logon-type analysis
 - **Deliverables:**
-  [investigation notes](./lab-01-phishing-credential-compromise/investigation-notes.md) ·
-  [incident report](./lab-01-phishing-credential-compromise/incident-report.md) ·
-  [SPL query library](./lab-01-phishing-credential-compromise/splunk-queries.md)
+  [investigation notes](./lab-01-password-spraying/investigation-notes.md) ·
+  [incident report](./lab-01-password-spraying/incident-report.md) ·
+  [SPL query library](./lab-01-password-spraying/splunk-queries.md)
 
 ### [Lab 02 — Kerberoasting Detection](./lab-02-kerberoasting/) · ✅ Complete
 

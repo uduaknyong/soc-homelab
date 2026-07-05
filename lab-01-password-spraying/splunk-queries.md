@@ -1,4 +1,4 @@
-# SPL Query Library — Lab 01: Phishing / Credential Compromise
+# SPL Query Library — Lab 01: Password Spray / Credential Compromise
 
 Reusable queries for investigating password spray and credential compromise alerts.
 

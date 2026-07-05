@@ -1,4 +1,4 @@
-# Lab 01 — Phishing → Credential Compromise
+# Lab 01 — Password Spray → Credential Compromise
 
 ## Scenario
 
