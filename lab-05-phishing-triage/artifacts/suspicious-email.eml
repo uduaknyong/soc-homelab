@@ -1,0 +1,33 @@
+Return-Path: <bounce@mail.micros0ft-verify.com>
+Received: from mail.micros0ft-verify.com (185.220.101.47)
+	by mx01.soclab.io with ESMTPS id 8f3a2b04c7a7
+	for <rgarcia@soclab.io>; Fri, 03 Jul 2026 08:12:01 +0000 (UTC)
+Authentication-Results: mx01.soclab.io;
+	spf=fail (sender IP is 185.220.101.47) smtp.mailfrom=bounce@mail.micros0ft-verify.com;
+	dkim=fail (no valid signature) header.d=micros0ft-verify.com;
+	dmarc=fail (p=reject) header.from=micros0ft-verify.com
+Received-SPF: fail (mx01.soclab.io: domain of bounce@mail.micros0ft-verify.com does not designate 185.220.101.47 as permitted sender)
+From: Microsoft 365 Security Team <security-alert@micros0ft-verify.com>
+Reply-To: no-reply@micros0ft-verify.com
+To: rgarcia@soclab.io
+Subject: Action Required: Unusual sign-in activity detected on your account
+Date: Fri, 03 Jul 2026 08:11:58 +0000
+Message-ID: <a91f2c04-7d5e-4b1a-9f3c-2e6b8d10c4a7@micros0ft-verify.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+X-Mailer: PHPMailer 6.8.0
+X-Priority: 1 (Highest)
+
+<html><body style="font-family:Segoe UI,Arial,sans-serif">
+<img src="https://microsoftonline-verify.review/img/ms-logo.png" width="120" alt="">
+<h2>Unusual sign-in activity</h2>
+<p>Dear rgarcia,</p>
+<p>We detected an unusual sign-in to your Microsoft 365 account from a new device.
+For your protection, access has been temporarily limited. You must verify your identity
+within <b>24 hours</b> or your account will be permanently suspended.</p>
+<p><a href="https://microsoftonline-verify.review/session/login?id=8f3a2b"
+   style="background:#0067b8;color:#fff;padding:10px 22px;text-decoration:none;border-radius:3px">
+   Verify my account</a></p>
+<p>If you did not attempt to sign in, verify now to secure your account.</p>
+<p style="color:#888;font-size:12px">Microsoft 365 Security Team &middot; This is an automated message.</p>
+</body></html>
